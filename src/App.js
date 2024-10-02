@@ -5,15 +5,26 @@ import { TodoList } from './TodoList';
 import { CreateTodoButton } from './CreateTodoButton';
 import { TodoItem } from './TodoItem';
 
+const defaultTodos = [
+	{text: 'Cut Onions', completed: false},
+	{text: 'Read a Book', completed: false},
+	{text: 'Workout', completed: true},
+	{text: 'Study JS', completed: true}
+];
+
 function App() {
   return (
     <div className="App">
-			<TodoCounter/>
+			<TodoCounter completed={3} total={5} />
 			<TodoSearch/>
 			<TodoList>
-				<TodoItem/>
-				<TodoItem/>
-				<TodoItem/>
+				{defaultTodos.map(todo => (
+					<TodoItem 
+						key={todo.text} 
+						text={todo.text} 
+						completed={todo.completed}
+					/>
+				))}
 			</TodoList>
 			<CreateTodoButton/>
     </div>
