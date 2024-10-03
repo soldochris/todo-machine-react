@@ -1,0 +1,16 @@
+button{
+	background-color: #d5bdaf;
+	border: none;
+	padding: 8px 8px;
+	border-radius: 4px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	font-size: 24px;
+}
+
+button:hover{
+	box-shadow: 0px 12px 20px rgba(0,0,0, 0.3);
+  color: #fff;
+  transform: translateY(-2px);
+}

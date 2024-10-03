@@ -1,0 +1,30 @@
+li{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fafafa;
+	border-radius: 4px;
+	margin: 8px 0;
+	padding: 12px 8px;
+
+	& p{
+		margin: 0;
+	}
+}
+span:nth-child(1):hover{
+	transform: scale(1.2);
+	color: green;
+	cursor: pointer;
+}
+
+span:nth-child(3):hover{
+	transform: scale(1.2);
+	color:red;
+	cursor: pointer;
+}
+
+.item-completed{
+	color: #6CB4EE;
+	text-decoration: line-through;
+	background-color: #dedede;
+}
