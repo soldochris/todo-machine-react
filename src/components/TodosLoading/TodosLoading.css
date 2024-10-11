@@ -1,0 +1,27 @@
+.skeleton-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(250, 250, 250, 0.6);
+	border-radius: 4px;
+	margin: 8px 0;
+	padding: 12px 8px;
+
+	& p{
+		margin: 0;
+	}
+}
+
+.skeleton-check, .skeleton-delete{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(200, 200, 200, 0.4);
+}
+
+.skeleton-text{
+  height: 20px;
+  width: 250px;
+  border-radius: 8px;
+  background-color: rgba(200, 200, 200, 0.4);
+}
