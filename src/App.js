@@ -5,7 +5,10 @@ import { AppUi } from './AppUi';
 
 function App() {
 
-	const [todos, updateTodos] = useLocalStorage('TODOS_V1', []);
+	const {
+		items: todos, updateItems: updateTodos, loading, error
+	} = useLocalStorage('TODOS_V1', []);
+
 	const [searchValue, setSearchValue] = React.useState("");
 	const completedTodos = todos.filter(todo => todo.completed).length;
 	const totalTodos = todos.length;
@@ -29,6 +32,8 @@ function App() {
 	}
   return (
 		<AppUi
+			loading = {loading}
+			error = {error}
 			completedTodos = {completedTodos}
 			totalTodos = {totalTodos}
 			searchValue = {searchValue}
