@@ -3,20 +3,20 @@ import './TodosLoading.css';
 function TodosLoading(){
 	return(
 		<>
-			<div class="skeleton-container">
-				<span class="skeleton-check"></span>
-				<p class="skeleton-text"></p>
-				<span class="skeleton-delete"></span>
+			<div className="skeleton-container">
+				<span className="skeleton-check"></span>
+				<p className="skeleton-text"></p>
+				<span className="skeleton-delete"></span>
 			</div>
-			<div class="skeleton-container">
-				<span class="skeleton-check"></span>
-				<p class="skeleton-text"></p>
-				<span class="skeleton-delete"></span>
+			<div className="skeleton-container">
+				<span className="skeleton-check"></span>
+				<p className="skeleton-text"></p>
+				<span className="skeleton-delete"></span>
 			</div>
-			<div class="skeleton-container">
-				<span class="skeleton-check"></span>
-				<p class="skeleton-text"></p>
-				<span class="skeleton-delete"></span>
+			<div className="skeleton-container">
+				<span className="skeleton-check"></span>
+				<p className="skeleton-text"></p>
+				<span className="skeleton-delete"></span>
 			</div>
 		</>
 	);
