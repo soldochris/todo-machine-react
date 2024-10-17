@@ -7,11 +7,13 @@ import { TodosLoading } from "./components/TodosLoading/TodosLoading";
 import { TodosError } from "./components/TodosError/TodosError";
 import { EmptyTodos } from "./components/EmptyTodos/EmptyTodos";
 import { TodoContext } from "./context/TodoContext";
+import { Modal } from "./components/Modal/Modal";
 import React from "react";
 
 function AppUi() {
-  const { loading, error, searchedTodos, completeTodo, deleteTodo } =
-    React.useContext(TodoContext);
+  const { 
+    loading, error, searchedTodos, completeTodo, deleteTodo, openModal, setOpenModal 
+  } = React.useContext(TodoContext);
 
   return (
     <>
@@ -32,7 +34,13 @@ function AppUi() {
           />
         ))}
       </TodoList>
-      <CreateTodoButton />
+      <CreateTodoButton setOpenModal={setOpenModal}/>
+      { openModal && (
+        <Modal>
+        create new todo
+        </Modal>
+      )}
+
     </>
   );
 }
