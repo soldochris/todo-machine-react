@@ -8,6 +8,7 @@ import { TodosError } from "./components/TodosError/TodosError";
 import { EmptyTodos } from "./components/EmptyTodos/EmptyTodos";
 import { TodoContext } from "./context/TodoContext";
 import { Modal } from "./components/Modal/Modal";
+import { TodoForm } from "./components/TodoForm/TodoForm";
 import React from "react";
 
 function AppUi() {
@@ -37,7 +38,7 @@ function AppUi() {
       <CreateTodoButton setOpenModal={setOpenModal}/>
       { openModal && (
         <Modal>
-        create new todo
+          <TodoForm/>
         </Modal>
       )}
 
