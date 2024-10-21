@@ -10,7 +10,7 @@
   border-radius: 8px;
   border: solid 1px#333 ;
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 200px;
+  margin-bottom: 320px;
 
   & div{
     width: 300px;
@@ -32,6 +32,8 @@ textarea{
   padding: 5px;
   margin-bottom: 1rem;
   height: 50px;
+  border: solid 1px #888;
+  border-radius: 4px;
 }
 
 .cancel-button-form{
@@ -40,7 +42,7 @@ textarea{
   font-size: 16px;
   padding: 8px;
   box-sizing: border-box;
-  border: solid 1px #d84356;
+  border: solid 1px #cf142b;
 }
 
 .confirm-button-form{
@@ -50,4 +52,8 @@ textarea{
   padding: 8px 12px;
   border: solid 1px #888;
   box-sizing: border-box;
+
+  &:hover{
+    color: #555;
+  }
 }
