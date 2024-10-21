@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Users/christiansoldevilla/Dev/platzi-courses/curso-react/curso-react-intro/build/static/css/main.8e460be0.css",
+    "main.js": "/Users/christiansoldevilla/Dev/platzi-courses/curso-react/curso-react-intro/build/static/js/main.93b24ced.js",
+    "index.html": "/Users/christiansoldevilla/Dev/platzi-courses/curso-react/curso-react-intro/build/index.html",
+    "main.8e460be0.css.map": "/Users/christiansoldevilla/Dev/platzi-courses/curso-react/curso-react-intro/build/static/css/main.8e460be0.css.map",
+    "main.93b24ced.js.map": "/Users/christiansoldevilla/Dev/platzi-courses/curso-react/curso-react-intro/build/static/js/main.93b24ced.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e460be0.css",
+    "static/js/main.93b24ced.js"
+  ]
+}
